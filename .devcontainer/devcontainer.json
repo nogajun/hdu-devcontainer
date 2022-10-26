@@ -11,8 +11,8 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "editor.fontSize": 16,
-        "terminal.integrated.fontSize": 16,
+        "editor.fontSize": 18,
+        "terminal.integrated.fontSize": 18,
         "editor.wordWrap": "on",
         "editor.tabSize": 2,
         "[html]": {
