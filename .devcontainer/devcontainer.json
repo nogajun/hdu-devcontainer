@@ -18,8 +18,11 @@
 				"michelemelluso.code-beautifier",
 				"ecmel.vscode-html-css",
 				"samuelcolvin.jinjahtml",
-        "formulahendry.auto-rename-tag"
-			]
+                "formulahendry.auto-rename-tag"
+			],
+            "css.remoteStyleSheets": [
+                "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            ]
 		}
 	},
 
