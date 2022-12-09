@@ -39,7 +39,8 @@
         "michelemelluso.code-beautifier",
         "ecmel.vscode-html-css",
         "samuelcolvin.jinjahtml",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   },
