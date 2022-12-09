@@ -38,8 +38,9 @@
         "ms-vscode.live-server",
         "michelemelluso.code-beautifier",
         "ecmel.vscode-html-css",
-        "samuelcolvin.jinjahtml",
         "formulahendry.auto-rename-tag",
+        "samuelcolvin.jinjahtml",
+        "noxiz.jinja-snippets",
         "streetsidesoftware.code-spell-checker"
       ]
     }
