@@ -35,7 +35,14 @@
         "python.linting.pycodestyleEnabled": false,
         "python.linting.flake8Enabled": true,
         "python.linting.flake8Args": [
-          "--ignore=E111, E114, E402"
+          "--ignore=E111, E114, E402, E501"
+        ],
+        "python.formatting.provider": "autopep8",
+        "python.formatting.autopep8Args": [
+          "--indent-size=4",
+          "--max-line-length",
+          "160",
+          "--ignore=E111, E114, E402, E501"
         ],
         "emmet.variables": {
           "lang": "ja"
@@ -57,15 +64,15 @@
         ]
       },
       "extensions": [
+        "dongli.python-preview",
         "ecmel.vscode-html-css",
         "formulahendry.auto-close-tag",
         "formulahendry.auto-rename-tag",
+        "kevinrose.vsc-python-indent",
         "michelemelluso.code-beautifier",
         "ms-azuretools.vscode-docker",
         "ms-python.autopep8",
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-toolsai.jupyter",
         "ms-vscode.live-server",
         "noxiz.jinja-snippets",
         "pkief.material-icon-theme",
