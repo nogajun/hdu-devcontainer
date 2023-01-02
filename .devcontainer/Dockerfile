@@ -2,7 +2,7 @@ FROM debian:bookworm
 
 LABEL version="1.3"
 LABEL maintainer="nogata@gm.himeji-du.ac.jp"
-LABEL description="For web app creation class. used from dev container on Visual studio code."
+LABEL description="For web app development class. used from dev container on Visual studio code."
 
 # 必要なパッケージをインストール
 RUN apt-get -y update && \
@@ -20,7 +20,7 @@ ENV LANGUAGE ja
 
 # bash_completionにpipのオプション補完を追加 https://github.com/ekalinin/pip-bash-completion
 RUN mkdir -p /etc/bash_completion.d/
-COPY pip /etc/bash_completion.d/
+COPY ./.devcontainer/pip /etc/bash_completion.d/
 
 # dockerユーザーとグループを追加
 ARG UID=1000
