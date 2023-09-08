@@ -17,7 +17,6 @@
     "ms-python.isort",
     "ms-python.python",
     "ms-toolsai.jupyter",
-    "ms-vscode-remote.vscode-remote-extensionpack",
     "ms-vscode.live-server",
     "noxiz.jinja-snippets",
     "oderwat.indent-rainbow",
