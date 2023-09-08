@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    "anbuselvanrocky.bootstrap5-vscode",
+    "eamodio.gitlens",
+    "ecmel.vscode-html-css",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-complete-tag",
+    "htmlhint.vscode-htmlhint",
+    "ionutvmi.path-autocomplete",
+    "kevinrose.vsc-python-indent",
+    "mhutchie.git-graph",
+    "michelemelluso.code-beautifier",
+    "mosapride.zenkaku",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "ms-python.isort",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode.live-server",
+    "noxiz.jinja-snippets",
+    "oderwat.indent-rainbow",
+    "pkief.material-icon-theme",
+    "samuelcolvin.jinjahtml",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}

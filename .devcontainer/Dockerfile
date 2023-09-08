@@ -1,13 +1,13 @@
 FROM debian:bookworm
 
-LABEL version="1.3"
+LABEL version="1.4"
 LABEL maintainer="nogata@gm.himeji-du.ac.jp"
 LABEL description="For web app development class. used from dev container on Visual studio code."
 
 # 必要なパッケージをインストール
 RUN apt-get -y update && \
     apt-get -y full-upgrade && \
-    apt-get -y install apt-utils locales sudo python3-all python3-pip python3-venv python-is-python3 python3-yaml python3-autopep8 python3-pep8-naming flake8 python3-flake8 python3-flake8-builtins bash-completion wget curl jq git task-japanese
+    apt-get -y install apt-utils locales sudo python3-all python3-pip python3-venv python-is-python3 python3-yaml flake8 python3-flake8 python3-flake8-builtins black python3-flake8-black bash-completion wget curl jq git task-japanese
 
 # 日本語ロケール(ja_JP.UTF-8)を追加
 ARG USER_LOCALE=ja_JP.UTF-8
