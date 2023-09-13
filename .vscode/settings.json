@@ -1,53 +1,59 @@
 {
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.cursorStyle": "block",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans CJK Mono JP', 'Noto Sans Mono JP', monospace",
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.minimap.enabled": false,
+  "editor.roundedSelection": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.parameterHints.enabled": false,
+  "editor.insertSpaces": true,
+  "extensions.ignoreRecommendations": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.env.windows": {
+    "PSExecutionPolicyPreference": "RemoteSigned"
+  },
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "vs-seti",
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier",
+    "editor.tabSize": 2
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans CJK Mono JP', 'Noto Sans Mono JP', monospace",
-    "editor.fontSize": 18,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.minimap.enabled": false,
-    "editor.roundedSelection": false,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "all",
-    "editor.parameterHints.enabled": false,
-    "editor.insertSpaces": true,
-    "extensions.ignoreRecommendations": false,
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "terminal.integrated.fontSize": 18,
-    "explorer.compactFolders": false,
-    "workbench.iconTheme": "vs-seti",
-    "isort.args": ["--profile", "black"],
-    "emmet.variables": {
-      "lang": "ja"
-    },
-    "[html]": {
-      "editor.defaultFormatter": "michelemelluso.code-beautifier",
-      "editor.tabSize": 2
-    },
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 2
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 4
-    },
-    "[python]": {
-      "editor.defaultFormatter": "ms-python.black-formatter",
-      "editor.tabSize": 4,
-      "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-      }
-    },
-    "css.styleSheets": [
-      "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    ]
-  }
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "css.styleSheets": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  ]
+}
