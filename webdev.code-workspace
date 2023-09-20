@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "webdev",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "extensions.ignoreRecommendations": false,
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.env.windows": {
+      "PSExecutionPolicyPreference": "RemoteSigned"
+    },
+    "explorer.compactFolders": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "emmet.variables": {
+      "lang": "ja"
+    }
+  }
+}
