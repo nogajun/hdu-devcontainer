@@ -35,11 +35,11 @@
     "lang": "ja"
   },
   "[html]": {
-    "editor.defaultFormatter": "michelemelluso.code-beautifier",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "michelemelluso.code-beautifier",
     "editor.tabSize": 2
   },
   "[json]": {
