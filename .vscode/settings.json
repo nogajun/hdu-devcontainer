@@ -9,6 +9,7 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
+  "editor.hover.enabled": true,
   "editor.minimap.enabled": false,
   "editor.roundedSelection": false,
   "editor.tabSize": 2,
