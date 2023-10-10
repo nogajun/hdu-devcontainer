@@ -35,6 +35,8 @@
   "emmet.variables": {
     "lang": "ja"
   },
+  "html.format.wrapLineLength": 0,
+  "prettier.printWidth": 1024,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
