@@ -23,6 +23,7 @@
     "pkief.material-icon-theme",
     "samuelcolvin.jinjahtml",
     "visualstudioexptteam.vscodeintellicode",
-    "njpwerner.autodocstring"
+    "njpwerner.autodocstring",
+    "mrmlnc.vscode-duplicate"
   ]
 }

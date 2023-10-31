@@ -17,7 +17,7 @@
       "lang": "ja"
     },
     "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.defaultFormatter": "vscode.html-language-features",
       "editor.tabSize": 2
     },
     "[css]": {
