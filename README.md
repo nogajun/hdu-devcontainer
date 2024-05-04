@@ -1,36 +1,40 @@
-# Web アプリ開発 Visual Stuidio Code 開発環境設定ファイル
+# Pythonプログラミング関連授業用Visual Stuidio Code開発環境設定ファイル
 
-これはWebアプリ開発の授業で使用する[Flask](https://flask.palletsprojects.com/)開発環境用設定ファイルです。
-LinuxやMacで展開しても何もないように見えますが、隠しフォルダーになっているVisual Studio Codeの設定フォルダー `.vscode` と
-Python venv用の `.pyenv` があります。
+これは、Pythonプログラミング関連授業で使用する、Pythonプログラミング開発環境設定ファイルです。
+
+LinuxやMacで展開しても何もないように見えますが、隠しフォルダーになっているVisual Studio Codeの
+設定フォルダー `.vscode` とPython venv用の `.pyenv` があります。
 
 linuxのコマンドで確認する場合は、 `ls -la` のように `ls` コマンドに `-a` オプションを付けて実行します。
 
 ## 使い方
 
-1. [zip ファイル](https://github.com/nogajun/hdu-devcontainer/archive/refs/heads/main.zip)をダウンロードして適当な場所に展開します。
-2. Visual Studio Codeを起動して、左下歯車アイコンの設定から新しいプロファイルを作成します。
-3. VS Codeの「ファイル」→「ファイルでワークスペースを開く」を選び、展開したzipアーカイブ内の`webdev.code-workspace`を開きます。
-4. ポップアップにしたがって拡張機能をインストールします。
+1. Visual Studio Codeを起動する。
+2. 左下歯車アイコンの設定から「プロファイル」→「プロファイルの作成」から新しいプロファイルを作成する。
+3. [zipファイル](https://github.com/nogajun/hdu-devcontainer/archive/refs/heads/main.zip)をダウンロードして適当な場所に展開する。
+4. VS Codeの「ファイル」→「ファイルでワークスペースを開く」を選び、展開したzipアーカイブ内の`programming.code-workspace`を開く。
+5. 設定に沿って拡張機能がインストールされて設置完了。
 
-### Flask のインストール
+## 最初のvenvインストール
 
-1. VS Codeから「ターミナル」を開いて`python -m venv .pyenv/`を実行する。
-2. `source .pyenv/bin/activate`を実行する。
-3. `pip install flask`を実行する。
-4. ターミナルを閉じる
+1. VS Codeから「ターミナル」を開く。
+2. `python -m venv .env/`を実行する。
+3. `source .pyenv/bin/activate`を実行する。
+4. pipを使って必要なファイルをインストールする
+5. ターミナルを閉じる
 
 ## ファイル一覧
 
 ```text
-├── .pyenv
+├── .env
 │   └── venvインストール用空フォルダ
 ├── .vscode
 │   ├── argv.json ... ロケール
 │   ├── extensions.json ... 拡張機能設定
 │   ├── launch.json ... VS Codeデバッガー設定
 │   └── settings.json ... VS Code設定
-├── webdev.code-workspace ... VS Codeワークスペース設定
+├── gitignore ... gitを使う場合のgitignore
+├── programming.code-workspace ... VS Codeワークスペース設定
 ├── LICENSE
 └── README.md
 ```

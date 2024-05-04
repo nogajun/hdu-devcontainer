@@ -1,3 +1,5 @@
+// インストールさせたい拡張機能を列挙
+// 拡張機能のIDは拡張機能で右クリック「拡張機能IDのコピー」でコピーできる
 {
   "recommendations": [
     "anbuselvanrocky.bootstrap5-vscode",
