@@ -11,6 +11,7 @@
     "mhutchie.git-graph",
     "michelemelluso.code-beautifier",
     "mosapride.zenkaku",
+    "mrmlnc.vscode-duplicate",
     "ms-ceintl.vscode-language-pack-ja",
     "ms-python.black-formatter",
     "ms-python.flake8",
@@ -18,12 +19,12 @@
     "ms-python.python",
     "ms-toolsai.jupyter",
     "ms-vscode.live-server",
+    "njpwerner.autodocstring",
     "noxiz.jinja-snippets",
     "oderwat.indent-rainbow",
     "pkief.material-icon-theme",
     "samuelcolvin.jinjahtml",
-    "visualstudioexptteam.vscodeintellicode",
-    "njpwerner.autodocstring",
-    "mrmlnc.vscode-duplicate"
+    "slightc.pip-manager",
+    "visualstudioexptteam.vscodeintellicode"
   ]
 }

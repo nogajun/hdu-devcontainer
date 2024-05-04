@@ -8,6 +8,7 @@
   "settings": {
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.fontSize": 18,
+    "window.titleBarStyle": "custom",
     "terminal.integrated.env.windows": {
       "PSExecutionPolicyPreference": "RemoteSigned"
     },
@@ -25,14 +26,14 @@
       "editor.tabSize": 2
     },
     "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.defaultFormatter": "vscode.json-language-features",
       "editor.tabSize": 4
     },
     "[python]": {
       "editor.defaultFormatter": "ms-python.black-formatter",
       "editor.tabSize": 4,
       "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
       }
     },
     "[markdown]": {

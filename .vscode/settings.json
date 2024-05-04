@@ -1,7 +1,6 @@
 {
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorStyle": "block",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans CJK Mono JP', 'Noto Sans Mono JP', monospace",
   "editor.fontSize": 18,
   "editor.formatOnPaste": true,
@@ -14,7 +13,7 @@
   "editor.roundedSelection": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.parameterHints.enabled": false,
   "editor.insertSpaces": true,
   "extensions.ignoreRecommendations": false,
@@ -23,6 +22,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.fontSize": 18,
+  "window.titleBarStyle": "custom",
   "terminal.integrated.env.windows": {
     "PSExecutionPolicyPreference": "RemoteSigned"
   },
@@ -36,7 +36,6 @@
     "lang": "ja"
   },
   "html.format.wrapLineLength": 0,
-  "prettier.printWidth": 360,
   "flake8.args": [
     "--ignore=E501",
     "--max-line-length",
@@ -47,22 +46,18 @@
     "160"
   ],
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.tabSize": 2
   },
   "[css]": {
     "editor.defaultFormatter": "michelemelluso.code-beautifier",
     "editor.tabSize": 2
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 4
-  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "[markdown]": {
