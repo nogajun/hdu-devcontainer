@@ -3,8 +3,8 @@
   "folders": [
     {
       // ワークスペースフォルダー
-      "name": "programming",
-      "path": "."
+      "name": "src",
+      "path": "./src/"
     }
   ],
   "settings": {
