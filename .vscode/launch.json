@@ -1,13 +1,18 @@
 {
-  "version": "0.0.1",
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.1.0",
   "configurations": [
     {
-      "name": "webdev",
-      "type": "python",
+      "name": "Python: Current file",
+      "type": "debugpy",
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "args": [],
+      "cwd": "${fileDirname}"
     }
   ]
 }

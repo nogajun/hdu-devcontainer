@@ -1,9 +1,9 @@
+// インストールさせたい拡張機能を列挙
+// 拡張機能のIDは拡張機能で右クリック「拡張機能IDのコピー」でコピーできる
 {
   "recommendations": [
     "anbuselvanrocky.bootstrap5-vscode",
-    "eamodio.gitlens",
     "ecmel.vscode-html-css",
-    "esbenp.prettier-vscode",
     "formulahendry.auto-complete-tag",
     "htmlhint.vscode-htmlhint",
     "ionutvmi.path-autocomplete",
@@ -11,18 +11,21 @@
     "mhutchie.git-graph",
     "michelemelluso.code-beautifier",
     "mosapride.zenkaku",
+    "mrmlnc.vscode-duplicate",
+    "ms-azuretools.vscode-docker",
     "ms-ceintl.vscode-language-pack-ja",
     "ms-python.black-formatter",
     "ms-python.flake8",
     "ms-python.isort",
     "ms-python.python",
     "ms-toolsai.jupyter",
-    "ms-vscode-remote.vscode-remote-extensionpack",
     "ms-vscode.live-server",
+    "njpwerner.autodocstring",
     "noxiz.jinja-snippets",
     "oderwat.indent-rainbow",
     "pkief.material-icon-theme",
     "samuelcolvin.jinjahtml",
+    "slightc.pip-manager",
     "visualstudioexptteam.vscodeintellicode"
   ]
 }
