@@ -4,7 +4,10 @@
     {
       // ワークスペースフォルダー
       "name": "src",
-      "path": "./src/"
+      "path": "src/"
+    },
+    {
+      "path": "."
     }
   ],
   "settings": {
