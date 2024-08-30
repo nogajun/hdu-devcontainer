@@ -36,6 +36,12 @@
   "editor.insertSpaces": true,
   // おすすめ拡張機能を表示しない
   "extensions.ignoreRecommendations": true,
+  // 拡張子htmlは、ファイルをjinja-htmlで開く
+  "files.associations": {
+    "*.html": "jinja-html",
+    "*.j2": "jinja-html",
+    "*.jinja2": "jinja-html"
+  },
   // 改行コードは\n
   "files.eol": "\n",
   // ファイル最後に空行を追加
@@ -54,6 +60,11 @@
   "explorer.compactFolders": false,
   // アイコンテーマはmaterial icon
   "workbench.iconTheme": "material-icon-theme",
+  // jinja2もHTMLアイコンにする
+  "material-icon-theme.languages.associations": {
+    "jinja2": "html",
+    "jinja-html": "html"
+  },
   // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
   "terminal.integrated.env.windows": {
     "PSExecutionPolicyPreference": "RemoteSigned"
@@ -63,7 +74,12 @@
     "--profile",
     "black"
   ],
-  // HTML emmetを日本語に設定
+  // jinja2でもemmetを使えるようにする
+  "emmet.includeLanguages": {
+    "jinja2": "html",
+    "jinja-html": "html"
+  },
+  // emmetのHTMLを日本語に設定
   "emmet.variables": {
     "lang": "ja"
   },
@@ -78,8 +94,9 @@
     "--line-length",
     "160"
   ],
-  // HTML拡張機能設定
-  "[html]": {
+  // HTML/jinja2拡張機能設定
+  "[html][jinja-html][jinja]": {
+    // "editor.defaultFormatter": "monosans.djlint",
     "editor.defaultFormatter": "vscode.html-language-features",
     "editor.tabSize": 2
   },
