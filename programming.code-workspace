@@ -4,11 +4,8 @@
     {
       // ワークスペースフォルダー
       "name": "src",
-      "path": "src/"
+      "path": "./"
     },
-    {
-      "path": "."
-    }
   ],
   "settings": {
     // おすすめ拡張機能を表示しない
@@ -25,12 +22,17 @@
     "explorer.compactFolders": false,
     // アイコンテーマはmaterial icon
     "workbench.iconTheme": "material-icon-theme",
+    // jinja2でもemmetを使えるようにする
+    "emmet.includeLanguages": {
+      "jinja2": "html",
+      "jinja-html": "html"
+    },
     // HTML emmetを日本語に設定
     "emmet.variables": {
       "lang": "ja"
     },
     // HTML拡張機能設定
-    "[html]": {
+    "[html][jinja-html][jinja]": {
       "editor.defaultFormatter": "vscode.html-language-features",
       "editor.tabSize": 2
     },

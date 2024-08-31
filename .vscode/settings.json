@@ -38,7 +38,6 @@
   "extensions.ignoreRecommendations": true,
   // 拡張子htmlは、ファイルをjinja-htmlで開く
   "files.associations": {
-    "*.html": "jinja-html",
     "*.j2": "jinja-html",
     "*.jinja2": "jinja-html"
   },

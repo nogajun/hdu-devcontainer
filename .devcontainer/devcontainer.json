@@ -11,6 +11,8 @@
   "customizations": {
     "vscode": {
       "settings": {
+        // 自動的にワークスペースを開く
+        "autoOpenWorkspace.enableAutoOpenAlwaysFirst": true,
         // 括弧に色付け
         "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
         // カーソルはブロック型
@@ -136,7 +138,9 @@
         "oderwat.indent-rainbow",
         "samuelcolvin.jinjahtml",
         "slightc.pip-manager",
-        "visualstudioexptteam.vscodeintellicode"
+        "visualstudioexptteam.vscodeintellicode",
+        "KevinRose.vsc-python-indent",
+        "zoma.vscode-auto-open-workspace"
       ]
     }
   },
