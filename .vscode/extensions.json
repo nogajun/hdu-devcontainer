@@ -22,12 +22,12 @@
     "ms-toolsai.jupyter",
     "ms-vscode.live-server",
     "ms-vscode-remote.vscode-remote-extensionpack",
-    "njpwerner.autodocstring",
     "noxiz.jinja-snippets",
     "oderwat.indent-rainbow",
     "pkief.material-icon-theme",
     "samuelcolvin.jinjahtml",
     "slightc.pip-manager",
-    "visualstudioexptteam.vscodeintellicode"
+    "visualstudioexptteam.vscodeintellicode",
+    "zoma.vscode-auto-open-workspace"
   ]
 }

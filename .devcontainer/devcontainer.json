@@ -47,7 +47,12 @@
         // インデントはスペース
         "editor.insertSpaces": true,
         // おすすめ拡張機能を表示しない
-        "extensions.ignoreRecommendations": true,
+        // "extensions.ignoreRecommendations": true,
+        // 拡張子htmlは、ファイルをjinja-htmlで開く
+        "files.associations": {
+          "*.j2": "jinja-html",
+          "*.jinja2": "jinja-html"
+        },
         // 改行コードは\n
         "files.eol": "\n",
         // ファイル最後に空行を追加
@@ -75,6 +80,11 @@
           "--profile",
           "black"
         ],
+        // jinja2でもemmetを使えるようにする
+        "emmet.includeLanguages": {
+          "jinja2": "html",
+          "jinja-html": "html"
+        },
         // HTML emmetを日本語に設定
         "emmet.variables": {
           "lang": "ja"
@@ -91,7 +101,7 @@
           "160"
         ],
         // HTML拡張機能設定
-        "[html]": {
+        "[html][jinja-html][jinja]": {
           "editor.defaultFormatter": "vscode.html-language-features",
           "editor.tabSize": 2
         },
@@ -134,7 +144,6 @@
         "ms-python.python",
         "ms-toolsai.jupyter",
         "ms-vscode.live-server",
-        "njpwerner.autodocstring",
         "oderwat.indent-rainbow",
         "samuelcolvin.jinjahtml",
         "slightc.pip-manager",
