@@ -9,7 +9,7 @@
   ],
   "settings": {
     // おすすめ拡張機能を表示しない
-    "extensions.ignoreRecommendations": true,
+    // "extensions.ignoreRecommendations": true,
     // フォントサイズ
     "terminal.integrated.fontSize": 18,
     // Linuxでタイトルバーを表示しない

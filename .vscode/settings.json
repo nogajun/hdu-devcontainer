@@ -35,7 +35,7 @@
   // インデントはスペース
   "editor.insertSpaces": true,
   // おすすめ拡張機能を表示しない
-  "extensions.ignoreRecommendations": true,
+  // "extensions.ignoreRecommendations": true,
   // 拡張子htmlは、ファイルをjinja-htmlで開く
   "files.associations": {
     "*.j2": "jinja-html",
