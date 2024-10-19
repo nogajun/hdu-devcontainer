@@ -27,6 +27,8 @@
     "pkief.material-icon-theme",
     "samuelcolvin.jinjahtml",
     "slightc.pip-manager",
-    "visualstudioexptteam.vscodeintellicode"
+    "visualstudioexptteam.vscodeintellicode",
+    "bierner.markdown-preview-github-styles",
+    "yzhang.markdown-all-in-one"
   ]
 }

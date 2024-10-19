@@ -6,7 +6,7 @@
   // カーソルはブロック型
   "editor.cursorStyle": "block",
   // フォント
-  "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
+  "editor.fontFamily": "Hack, Inconsolata, 'IBM Plex Mono', 'Noto Sans Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
   // フォントサイズ
   "editor.fontSize": 18,
   // 貼り付けたものをは整形する
@@ -114,6 +114,7 @@
   },
   // Markdown拡張機能設定
   "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.tabSize": 4
   },
   // bootstrap css参照用
