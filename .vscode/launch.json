@@ -2,7 +2,7 @@
   // IntelliSense を使用して利用可能な属性を学べます。
   // 既存の属性の説明をホバーして表示します。
   // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.1.0",
+  "version": "0.1.1",
   "configurations": [
     {
       "name": "Python: Current file",
@@ -13,6 +13,18 @@
       "justMyCode": true,
       "args": [],
       "cwd": "${fileDirname}"
+    },
+    {
+      "name": "Streamlit",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "cwd": "${fileDirname}",
+      "args": [
+        "run",
+        "${file}"
+      ],
+      "console": "integratedTerminal"
     }
   ]
 }
