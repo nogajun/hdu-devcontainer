@@ -6,7 +6,7 @@
   // カーソルはブロック型
   "editor.cursorStyle": "block",
   // フォント
-  "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
+  "editor.fontFamily": "Hack, Inconsolata, 'IBM Plex Mono', 'Noto Sans Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
   // フォントサイズ
   "editor.fontSize": 18,
   // 貼り付けたものをは整形する
@@ -29,7 +29,9 @@
   // 行折り返し有効
   "editor.wordWrap": "on",
   // 半角スペース表示無効
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "selection",
+  // 全角スペース表示
+  "editor.unicodeHighlight.invisibleCharacters": true,
   // 入力中のヒントを出さない
   "editor.parameterHints.enabled": false,
   // インデントはスペース
@@ -104,6 +106,11 @@
     "editor.defaultFormatter": "michelemelluso.code-beautifier",
     "editor.tabSize": 2
   },
+  // JSON拡張機能設定
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 4
+  },
   // Python拡張機能設定
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -114,7 +121,18 @@
   },
   // Markdown拡張機能設定
   "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.tabSize": 4
+  },
+  // JavaScript拡張機能設定
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  // TypeScript拡張機能設定
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   // bootstrap css参照用
   "css.styleSheets": [

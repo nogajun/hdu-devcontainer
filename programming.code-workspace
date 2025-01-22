@@ -5,13 +5,13 @@
       // ワークスペースフォルダー
       "name": "src",
       "path": "./"
-    },
+    }
   ],
   "settings": {
     // おすすめ拡張機能を表示しない
     // "extensions.ignoreRecommendations": true,
     // フォントサイズ
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 20,
     // Linuxでタイトルバーを表示しない
     "window.titleBarStyle": "custom",
     // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
@@ -56,7 +56,18 @@
     },
     // Markdown拡張機能設定
     "[markdown]": {
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one",
       "editor.tabSize": 4
+    },
+    // JavaScript拡張機能設定
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.tabSize": 2
+    },
+    // TypeScript拡張機能設定
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.tabSize": 2
     },
     // bootstrap css参照用
     "css.styleSheets": [

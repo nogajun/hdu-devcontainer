@@ -1,12 +1,10 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-dockerfile
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
   "name": "programming",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "build": {
-    // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-    "dockerfile": "Dockerfile",
-    // Sets the run context to one level up instead of the .devcontainer folder.
-    "context": ".."
+    "dockerfile": "Dockerfile"
   },
   "customizations": {
     "vscode": {
@@ -18,7 +16,7 @@
         // カーソルはブロック型
         "editor.cursorStyle": "block",
         // フォント
-        "editor.fontFamily": "Hack, Inconsolata, 'Noto Sans Mono','IBM Plex Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
+        "editor.fontFamily": "Hack, Inconsolata, 'IBM Plex Mono', 'Noto Sans Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
         // フォントサイズ
         "editor.fontSize": 18,
         // 貼り付けたものをは整形する
@@ -41,7 +39,9 @@
         // 行折り返し有効
         "editor.wordWrap": "on",
         // 半角スペース表示無効
-        "editor.renderWhitespace": "none",
+        "editor.renderWhitespace": "selection",
+        // 全角スペース表示
+        "editor.unicodeHighlight.invisibleCharacters": true,
         // 入力中のヒントを出さない
         "editor.parameterHints.enabled": false,
         // インデントはスペース
@@ -71,37 +71,33 @@
         "explorer.compactFolders": false,
         // アイコンテーマはmaterial icon
         "workbench.iconTheme": "material-icon-theme",
+        // jinja2もHTMLアイコンにする
+        "material-icon-theme.languages.associations": {
+          "jinja2": "html",
+          "jinja-html": "html"
+        },
         // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
         "terminal.integrated.env.windows": {
           "PSExecutionPolicyPreference": "RemoteSigned"
         },
         // Python isort設定
-        "isort.args": [
-          "--profile",
-          "black"
-        ],
+        "isort.args": ["--profile", "black"],
         // jinja2でもemmetを使えるようにする
         "emmet.includeLanguages": {
           "jinja2": "html",
           "jinja-html": "html"
         },
-        // HTML emmetを日本語に設定
+        // emmetのHTMLを日本語に設定
         "emmet.variables": {
           "lang": "ja"
         },
         // Flake8で長い行をエラーにしない
-        "flake8.args": [
-          "--ignore=E501",
-          "--max-line-length",
-          "160"
-        ],
+        "flake8.args": ["--ignore=E501", "--max-line-length", "160"],
         // blackフォーマッター設定
-        "black-formatter.args": [
-          "--line-length",
-          "160"
-        ],
-        // HTML拡張機能設定
+        "black-formatter.args": ["--line-length", "160"],
+        // HTML/jinja2拡張機能設定
         "[html][jinja-html][jinja]": {
+          // "editor.defaultFormatter": "monosans.djlint",
           "editor.defaultFormatter": "vscode.html-language-features",
           "editor.tabSize": 2
         },
@@ -109,6 +105,11 @@
         "[css]": {
           "editor.defaultFormatter": "michelemelluso.code-beautifier",
           "editor.tabSize": 2
+        },
+        // JSON拡張機能設定
+        "[json]": {
+          "editor.defaultFormatter": "vscode.json-language-features",
+          "editor.tabSize": 4
         },
         // Python拡張機能設定
         "[python]": {
@@ -120,7 +121,18 @@
         },
         // Markdown拡張機能設定
         "[markdown]": {
+          "editor.defaultFormatter": "yzhang.markdown-all-in-one",
           "editor.tabSize": 4
+        },
+        // JavaScript拡張機能設定
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.tabSize": 2
+        },
+        // TypeScript拡張機能設定
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.tabSize": 2
         },
         // bootstrap css参照用
         "css.styleSheets": [
@@ -128,41 +140,74 @@
         ]
       },
       "extensions": [
+        "adrianwilczynski.alpine-js-intellisense",
+        "alexcvzz.vscode-sqlite",
         "anbuselvanrocky.bootstrap5-vscode",
+        "astro-build.astro-vscode",
+        "bierner.markdown-preview-github-styles",
+        "christian-kohler.path-intellisense",
+        "dbaeumer.vscode-eslint",
         "ecmel.vscode-html-css",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.auto-rename-tag",
         "htmlhint.vscode-htmlhint",
-        "ionutvmi.path-autocomplete",
+        "humao.rest-client",
+        "janisdd.vscode-edit-csv",
+        "kevinrose.vsc-python-indent",
+        "leizongmin.node-module-intellisense",
+        "mechatroner.rainbow-csv",
         "mhutchie.git-graph",
         "michelemelluso.code-beautifier",
-        "mosapride.zenkaku",
         "mrmlnc.vscode-duplicate",
         "ms-azuretools.vscode-docker",
         "ms-ceintl.vscode-language-pack-ja",
         "ms-python.black-formatter",
+        "ms-python.debugpy",
         "ms-python.flake8",
         "ms-python.isort",
         "ms-python.python",
+        "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode-remote.vscode-remote-extensionpack",
         "ms-vscode.live-server",
+        "ms-vscode.remote-explorer",
+        "ms-vscode.remote-server",
+        "ms-vsliveshare.vsliveshare",
+        "noxiz.jinja-snippets",
         "oderwat.indent-rainbow",
+        "otovo-oss.htmx-tags",
+        "pkief.material-icon-theme",
+        "qwtel.sqlite-viewer",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
         "samuelcolvin.jinjahtml",
         "slightc.pip-manager",
-        "visualstudioexptteam.vscodeintellicode",
-        "KevinRose.vsc-python-indent",
-        "zoma.vscode-auto-open-workspace"
+        "wholroyd.jinja",
+        "xabikos.javascriptsnippets",
+        "yzhang.markdown-all-in-one"
       ]
     }
   },
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-  // Uncomment the next line to run commands after the container is created - for example installing curl.
-  // "postCreateCommand": "mv ./gitignore ./.gitignore && /usr/bin/python -m venv .env/ && . .env/bin/activate && pip install -U pip setuptools ipykernel",
-  // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-  "runArgs": [
-    "--userns=keep-id"
-  ],
-  // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-  // "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-  // Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "docker"
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "vscode"
 }
