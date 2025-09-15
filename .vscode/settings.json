@@ -66,6 +66,7 @@
     //  "jinja2": "html",
     "jinja-html": "html"
   },
+  // github copilotを無効にする
   "github.copilot.enable": {
     "*": false,
   },
@@ -115,7 +116,7 @@
     "editor.tabSize": 2
   },
   // JSON拡張機能設定
-  "[json]": {
+  "[json][jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.tabSize": 4
   },
