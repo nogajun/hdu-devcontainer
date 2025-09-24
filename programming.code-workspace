@@ -1,81 +1,18 @@
 // ワークスペース設定
 {
-  "folders": [
-    {
-      // ワークスペースフォルダー
-      "name": "src",
-      "path": "./"
+    "folders": [
+        {
+            // ワークスペースフォルダー
+            "name": "src",
+            "path": "./"
+        }
+    ],
+    "settings": {
+        // Linuxでタイトルバーを表示しない
+        "window.titleBarStyle": "custom",
+        // github copilotを無効にする
+        "github.copilot.enable": {
+            "*": false,
+        },
     }
-  ],
-  "settings": {
-    // おすすめ拡張機能を表示しない
-    // "extensions.ignoreRecommendations": true,
-    // フォントサイズ
-    "terminal.integrated.fontSize": 18,
-    // Linuxでタイトルバーを表示しない
-    "window.titleBarStyle": "custom",
-    // github copilotを無効にする
-    "github.copilot.enable": {
-      "*": false,
-    },
-    // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
-    "terminal.integrated.env.windows": {
-      "PSExecutionPolicyPreference": "RemoteSigned"
-    },
-    // ディレクトリパスを展開
-    "explorer.compactFolders": false,
-    // アイコンテーマはmaterial icon
-    "workbench.iconTheme": "material-icon-theme",
-    // jinja2でもemmetを使えるようにする
-    "emmet.includeLanguages": {
-      // "jinja2": "html",
-      "jinja-html": "html"
-    },
-    // HTML emmetを日本語に設定
-    "emmet.variables": {
-      "lang": "ja"
-    },
-    // HTML拡張機能設定
-    "[html][jinja-html][jinja]": {
-      "editor.defaultFormatter": "vscode.html-language-features",
-      "editor.tabSize": 2
-    },
-    // CSS拡張機能設定
-    "[css]": {
-      "editor.defaultFormatter": "michelemelluso.code-beautifier",
-      "editor.tabSize": 2
-    },
-    // JSON拡張機能設定
-    "[json][jsonc]": {
-      "editor.defaultFormatter": "vscode.json-language-features",
-      "editor.tabSize": 4
-    },
-    // Python拡張機能設定
-    "[python]": {
-      "editor.defaultFormatter": "ms-python.black-formatter",
-      "editor.tabSize": 4,
-      "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-      }
-    },
-    // Markdown拡張機能設定
-    "[markdown]": {
-      "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-      "editor.tabSize": 4
-    },
-    // JavaScript拡張機能設定
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 2
-    },
-    // TypeScript拡張機能設定
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 2
-    },
-    // bootstrap css参照用
-    "css.styleSheets": [
-      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    ]
-  }
 }
