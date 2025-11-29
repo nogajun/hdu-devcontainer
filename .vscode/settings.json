@@ -82,10 +82,14 @@
     "terminal.integrated.env.windows": {
         "PSExecutionPolicyPreference": "RemoteSigned"
     },
+    // ターミナルで出力が見えなくなるスティッキースクロールを無効にする
+    "terminal.integrated.stickyScroll.enabled": false,
+    // ターミナルでVS Codeがコマンド補完することを無効にする
+    "terminal.integrated.suggest.enabled": false,
     // Python isort設定
     "isort.args": [
         "--profile",
-        "black"
+        "black",
     ],
     // jinja2でもemmetを使えるようにする
     "emmet.includeLanguages": {
