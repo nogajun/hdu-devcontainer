@@ -8,6 +8,8 @@
         }
     ],
     "settings": {
+        // github copilotを無効にする
+        "chat.disableAIFeatures": true,
         // jinja2でもemmetを使えるようにする
         "emmet.includeLanguages": {
             //  "jinja2": "html",
@@ -17,11 +19,32 @@
         "emmet.variables": {
             "lang": "ja"
         },
-        // Linuxでタイトルバーを表示しない
-        "window.titleBarStyle": "custom",
-        // github copilotを無効にする
-        "github.copilot.enable": {
-            "*": false,
+        // ディレクトリパスを展開
+        "explorer.compactFolders": false,
+        // おすすめ拡張機能を表示しない
+        "extensions.ignoreRecommendations": true,
+        // 拡張子htmlは、ファイルをjinja-htmlで開く
+        "files.associations": {
+            // "*.j2": "jinja-html",
+            // "*.jinja2": "jinja-html",
+            "*.html": "jinja-html"
         },
+        // jinja2もHTMLアイコンにする
+        "material-icon-theme.languages.associations": {
+            //  "jinja2": "html",
+            "jinja-html": "html"
+        },
+        // ターミナルのフォントサイズ
+        "terminal.integrated.fontSize": 18,
+        // ターミナルで出力が見えなくなるスティッキースクロールを無効にする
+        "terminal.integrated.stickyScroll.enabled": false,
+        // ターミナルでVS Codeがコマンド補完することを無効にする
+        "terminal.integrated.suggest.enabled": false,
+        // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
+        "terminal.integrated.env.windows": {
+            "PSExecutionPolicyPreference": "RemoteSigned"
+        },
+        // アイコンテーマはmaterial icon
+        "workbench.iconTheme": "material-icon-theme",
     }
 }

@@ -19,7 +19,7 @@
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": true,
     // マウスオーバーのポップアップを有効
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     // ミニマップは非表示
     "editor.minimap.enabled": false,
     // 選択範囲の角を丸める
@@ -36,22 +36,14 @@
     "editor.parameterHints.enabled": false,
     // インデントはスペース
     "editor.insertSpaces": true,
-    // おすすめ拡張機能を表示しない
-    // "extensions.ignoreRecommendations": true,
-    // 拡張子htmlは、ファイルをjinja-htmlで開く
-    "files.associations": {
-        //  "*.j2": "jinja-html",
-        //  "*.jinja2": "jinja-html",
-        "*.html": "jinja-html",
-    },
     // 改行コードは\n
     "files.eol": "\n",
     // エクスプローラーで設定関連を非表示にする
     "files.exclude": {
-        "**/.vscode": true,
+        // "**/.vscode": true,
         "**/.venv": true,
         "**/.git": true,
-        "**/.gitignore": true,
+        "**/.gitignore": true
     },
     // ファイル最後に空行を追加
     "files.insertFinalNewline": true,
@@ -59,47 +51,13 @@
     "files.trimFinalNewlines": true,
     // ファイル最後のスペースは削除
     "files.trimTrailingWhitespace": true,
-    // ターミナルのフォントサイズ
-    "terminal.integrated.fontSize": 18,
-    // Linuxでタイトルバーを表示しない
-    "window.titleBarStyle": "custom",
     // HTMLの行折り返し無効
     "html.format.wrapLineLength": 0,
-    // ディレクトリパスを展開
-    "explorer.compactFolders": false,
-    // アイコンテーマはmaterial icon
-    "workbench.iconTheme": "material-icon-theme",
-    // jinja2もHTMLアイコンにする
-    "material-icon-theme.languages.associations": {
-        //  "jinja2": "html",
-        "jinja-html": "html"
-    },
-    // github copilotを無効にする
-    "github.copilot.enable": {
-        "*": false,
-    },
-    // Windows PowerShell向け設定 https://zenn.dev/nekocodex/articles/eb3403961ad9b966ff6e
-    "terminal.integrated.env.windows": {
-        "PSExecutionPolicyPreference": "RemoteSigned"
-    },
-    // ターミナルで出力が見えなくなるスティッキースクロールを無効にする
-    "terminal.integrated.stickyScroll.enabled": false,
-    // ターミナルでVS Codeがコマンド補完することを無効にする
-    "terminal.integrated.suggest.enabled": false,
     // Python isort設定
     "isort.args": [
         "--profile",
-        "black",
+        "black"
     ],
-    // jinja2でもemmetを使えるようにする
-    "emmet.includeLanguages": {
-        //  "jinja2": "html",
-        "jinja-html": "html"
-    },
-    // emmetのHTMLを日本語に設定
-    "emmet.variables": {
-        "lang": "ja"
-    },
     // Flake8で長い行をエラーにしない
     "flake8.args": [
         "--ignore=E501",
@@ -120,7 +78,7 @@
     "[jinja-html][jinja]": {
         // jinja2テンプレートの場合、貼り付け、保存時に整形しない
         "editor.formatOnPaste": false,
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     // CSS拡張機能設定
     "[css]": {
@@ -147,11 +105,6 @@
     },
     // JavaScript拡張機能設定
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2
-    },
-    // TypeScript拡張機能設定
-    "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2
     },
