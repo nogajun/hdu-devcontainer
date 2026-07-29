@@ -3,7 +3,7 @@
     "folders": [
         {
             // ワークスペースフォルダー
-            "name": "src",
+            "name": "workspace",
             "path": "./"
         }
     ],
@@ -22,7 +22,7 @@
         // ディレクトリパスを展開
         "explorer.compactFolders": false,
         // おすすめ拡張機能を表示しない
-        "extensions.ignoreRecommendations": true,
+        // "extensions.ignoreRecommendations": true,
         // 拡張子htmlは、ファイルをjinja-htmlで開く
         "files.associations": {
             // "*.j2": "jinja-html",

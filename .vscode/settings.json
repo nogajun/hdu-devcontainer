@@ -71,12 +71,11 @@
     ],
     // HTML/jinja2拡張機能設定
     "[html][jinja-html][jinja]": {
-        // "editor.defaultFormatter": "monosans.djlint",
         "editor.defaultFormatter": "vscode.html-language-features",
         "editor.tabSize": 2
     },
+    // jinja2テンプレートの場合、貼り付け、保存時に整形しない
     "[jinja-html][jinja]": {
-        // jinja2テンプレートの場合、貼り付け、保存時に整形しない
         "editor.formatOnPaste": false,
         "editor.formatOnSave": false
     },
