@@ -11,6 +11,8 @@
     "editor.fontFamily": "Hack, Inconsolata, 'IBM Plex Mono', 'Noto Sans Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
     // フォントサイズ
     "editor.fontSize": 18,
+    // ターミナルのフォントサイズ
+    "terminal.integrated.fontSize": 18,
     // 貼り付けたものをは整形する
     "editor.formatOnPaste": true,
     // 保存すると整形する
