@@ -1,6 +1,8 @@
 {
     // VS Code全体設定
     //
+    // AIチャット機能を無効
+    "chat.disableAIFeatures": true,
     // 括弧に色付け
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     // カーソルはブロック型

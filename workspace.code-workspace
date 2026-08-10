@@ -29,6 +29,10 @@
             // "*.jinja2": "jinja-html",
             "*.html": "jinja-html"
         },
+        // github copilotを無効にする
+        "github.copilot.enable": {
+            "*": false
+        },
         // jinja2もHTMLアイコンにする
         "material-icon-theme.languages.associations": {
             //  "jinja2": "html",
