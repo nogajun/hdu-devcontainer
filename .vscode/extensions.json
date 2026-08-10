@@ -8,12 +8,7 @@
         "bradgashler.htmltagwrap",
         "ecmel.vscode-html-css",
         "esbenp.prettier-vscode",
-        "formulahendry.auto-close-tag",
-        "formulahendry.auto-complete-tag",
-        "formulahendry.auto-rename-tag",
-        "htmlhint.vscode-htmlhint",
         "kevinrose.vsc-python-indent",
-        "michelemelluso.code-beautifier",
         "ms-ceintl.vscode-language-pack-ja",
         "ms-python.black-formatter",
         "ms-python.debugpy",
@@ -31,9 +26,9 @@
         "oderwat.indent-rainbow",
         "pkief.material-icon-theme",
         "qwtel.sqlite-viewer",
-        "samuelcolvin.jinjahtml",
         "sperovita.alpinejs-syntax-highlight",
+        "wholroyd.jinja",
         "wyattferguson.jinja2-snippet-kit",
-        "yzhang.markdown-all-in-one",
+        "yzhang.markdown-all-in-one"
     ]
 }

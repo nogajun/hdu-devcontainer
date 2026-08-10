@@ -1,8 +1,6 @@
 {
     // VS Code全体設定
     //
-    // AIチャット機能を無効
-    "chat.disableAIFeatures": true,
     // 括弧に色付け
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     // カーソルはブロック型
@@ -11,8 +9,6 @@
     "editor.fontFamily": "Hack, Inconsolata, 'IBM Plex Mono', 'Noto Sans Mono', 'Noto Sans Mono JP', 'Noto Sans CJK Mono JP', monospace",
     // フォントサイズ
     "editor.fontSize": 18,
-    // ターミナルのフォントサイズ
-    "terminal.integrated.fontSize": 18,
     // 貼り付けたものをは整形する
     "editor.formatOnPaste": true,
     // 保存すると整形する
@@ -42,12 +38,13 @@
     "editor.insertSpaces": true,
     // 改行コードは\n
     "files.eol": "\n",
+    // マウスホイールでフォントサイズ変更
+    "editor.mouseWheelZoom": true,
     // エクスプローラーで設定関連を非表示にする
     "files.exclude": {
         // "**/.vscode": true,
         "**/.venv": true,
-        "**/.git": true,
-        "**/.gitignore": true
+        "**/__pycache__": true,
     },
     // ファイル最後に空行を追加
     "files.insertFinalNewline": true,
@@ -85,7 +82,7 @@
     },
     // CSS拡張機能設定
     "[css]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier",
+        "editor.defaultFormatter": "vscode.css-language-features",
         "editor.tabSize": 2
     },
     // JSON拡張機能設定
@@ -114,5 +111,5 @@
     // bootstrap css参照用
     "css.styleSheets": [
         "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    ]
+    ],
 }
