@@ -26,9 +26,9 @@
         "oderwat.indent-rainbow",
         "pkief.material-icon-theme",
         "qwtel.sqlite-viewer",
+        "samuelcolvin.jinjahtml",
         "sperovita.alpinejs-syntax-highlight",
-        "wholroyd.jinja",
         "wyattferguson.jinja2-snippet-kit",
-        "yzhang.markdown-all-in-one"
+        "yzhang.markdown-all-in-one",
     ]
 }

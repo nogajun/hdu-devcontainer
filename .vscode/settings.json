@@ -36,10 +36,12 @@
     "editor.parameterHints.enabled": false,
     // インデントはスペース
     "editor.insertSpaces": true,
-    // 改行コードは\n
-    "files.eol": "\n",
+    // エディターのスティッキースクロールを無効
+    "editor.stickyScroll.enabled": false,
     // マウスホイールでフォントサイズ変更
     "editor.mouseWheelZoom": true,
+    // 改行コードは\n
+    "files.eol": "\n",
     // エクスプローラーで設定関連を非表示にする
     "files.exclude": {
         // "**/.vscode": true,
