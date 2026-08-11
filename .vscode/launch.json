@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current file",
+            "name": "Python全般",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
@@ -15,21 +15,21 @@
             "cwd": "${fileDirname}"
         },
         {
-            "name": "Python デバッガー: Flask",
+            "name": "Flask",
             "type": "debugpy",
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "app.py",
+                "FLASK_APP": "${file}",
                 "FLASK_DEBUG": "1"
             },
             "args": [
                 "run",
-                "--no-debugger",
-                "--no-reload"
+                "--debugger",
+                "--reload"
             ],
             "jinja": true,
-            "autoStartBrowser": false
+            "autoStartBrowser": true
         },
         {
             "name": "Streamlit",
